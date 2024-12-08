@@ -14,23 +14,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha384-9ndCyUa1zY8HkXQp5Sej5Rl5KkTuxs0n3lA7A4X+A5K6Z+Xr9AnUrk3PBEO79I+d" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container mt-5 text-center">
+    <div class="container mt-5">
         <!-- Title and Tagline -->
-        <h1 class="display-4">Western Institute of Technology (WIT)</h1>
-        <p class="lead">Empowering education with technology.</p>
+        <div class="text-center mb-5">
+            <h1 class="display-4">Western Institute of Technology (WIT)</h1>
+            <p class="lead">Empowering education with technology.</p>
+        </div>
 
-        <!-- Register Button with Dropdown -->
-        <div class="mt-4">
-            <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="registerButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    Register
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="registerButton">
-                    <li><a class="dropdown-item" href="#">Bachelor of Information Technology</a></li>
-                    <li><a class="dropdown-item" href="#">Diploma in Business Administration</a></li>
-                    <li><a class="dropdown-item" href="#">Certificate in Hospitality Management</a></li>
-                    <li><a class="dropdown-item" href="#">Health Sciences Program</a></li>
-                </ul>
+        <!-- Detailed Program Section -->
+        <div class="row">
+            <!-- Program 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        Bachelor of Information Technology
+                    </div>
+                    <div class="card-body">
+                        <p>Learn the foundations of software development, networking, and cloud computing.</p>
+                        <a href="/Programs/InformationTechnology" class="btn btn-primary">Learn More</a>
+                        <a href="/Application/InformationTechnology" class="btn btn-outline-primary">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        Diploma in Business Administration
+                    </div>
+                    <div class="card-body">
+                        <p>Master the skills needed to excel in today’s dynamic business environment.</p>
+                        <a href="/Programs/BusinessAdministration" class="btn btn-success">Learn More</a>
+                        <a href="/Application/BusinessAdministration" class="btn btn-outline-success">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program 3 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header bg-warning text-dark">
+                        Certificate in Hospitality Management
+                    </div>
+                    <div class="card-body">
+                        <p>Develop industry-leading hospitality skills and customer service excellence.</p>
+                        <a href="/Programs/HospitalityManagement" class="btn btn-warning">Learn More</a>
+                        <a href="/Application/HospitalityManagement" class="btn btn-outline-warning">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program 4 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header bg-danger text-white">
+                        Health Sciences Program
+                    </div>
+                    <div class="card-body">
+                        <p>Prepare for a rewarding career in healthcare and medical technology.</p>
+                        <a href="/Programs/HealthSciences" class="btn btn-danger">Learn More</a>
+                        <a href="/Application/HealthSciences" class="btn btn-outline-danger">Apply Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -40,9 +86,7 @@
         <p>&copy; @DateTime.Now.Year Western Institute of Technology (WIT). All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybJc2IftKT6tBz9EpE4e1i+lX/EdH5b49B/hRWzA8dx6RSbGS" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6Bh4KrYlIwEYX9OMa4jq3uA1YzTjHakLxMKEQYVhHj5M" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
