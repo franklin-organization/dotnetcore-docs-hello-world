@@ -12,6 +12,11 @@
     <title>@ViewBag.Title</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha384-9ndCyUa1zY8HkXQp5Sej5Rl5KkTuxs0n3lA7A4X+A5K6Z+Xr9AnUrk3PBEO79I+d" crossorigin="anonymous">
+    <style>
+        .program-details {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container mt-5">
@@ -21,61 +26,89 @@
             <p class="lead">Empowering education with technology.</p>
         </div>
 
-        <!-- Detailed Program Section -->
+        <!-- Program Section -->
         <div class="row">
             <!-- Program 1 -->
             <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-header bg-primary text-white">
-                        Bachelor of Information Technology
-                    </div>
-                    <div class="card-body">
-                        <p>Learn the foundations of software development, networking, and cloud computing.</p>
-                        <a href="/Programs/InformationTechnology" class="btn btn-primary">Learn More</a>
-                        <a href="/Application/InformationTechnology" class="btn btn-outline-primary">Apply Now</a>
-                    </div>
+                <button class="btn btn-primary w-100" type="button" onclick="toggleDetails('program1-details')">
+                    Bachelor of Information Technology
+                </button>
+                <div id="program1-details" class="program-details mt-3">
+                    <p>Learn the foundations of software development, networking, and cloud computing.</p>
+                    <form method="post" action="#">
+                        <div class="form-group mb-3">
+                            <label for="fullName1">Full Name</label>
+                            <input type="text" id="fullName1" name="fullName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email1">Email</label>
+                            <input type="email" id="email1" name="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Apply Now</button>
+                    </form>
                 </div>
             </div>
 
             <!-- Program 2 -->
             <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-header bg-success text-white">
-                        Diploma in Business Administration
-                    </div>
-                    <div class="card-body">
-                        <p>Master the skills needed to excel in today’s dynamic business environment.</p>
-                        <a href="/Programs/BusinessAdministration" class="btn btn-success">Learn More</a>
-                        <a href="/Application/BusinessAdministration" class="btn btn-outline-success">Apply Now</a>
-                    </div>
+                <button class="btn btn-success w-100" type="button" onclick="toggleDetails('program2-details')">
+                    Diploma in Business Administration
+                </button>
+                <div id="program2-details" class="program-details mt-3">
+                    <p>Master the skills needed to excel in today’s dynamic business environment.</p>
+                    <form method="post" action="#">
+                        <div class="form-group mb-3">
+                            <label for="fullName2">Full Name</label>
+                            <input type="text" id="fullName2" name="fullName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email2">Email</label>
+                            <input type="email" id="email2" name="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Apply Now</button>
+                    </form>
                 </div>
             </div>
 
             <!-- Program 3 -->
             <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-header bg-warning text-dark">
-                        Certificate in Hospitality Management
-                    </div>
-                    <div class="card-body">
-                        <p>Develop industry-leading hospitality skills and customer service excellence.</p>
-                        <a href="/Programs/HospitalityManagement" class="btn btn-warning">Learn More</a>
-                        <a href="/Application/HospitalityManagement" class="btn btn-outline-warning">Apply Now</a>
-                    </div>
+                <button class="btn btn-warning w-100" type="button" onclick="toggleDetails('program3-details')">
+                    Certificate in Hospitality Management
+                </button>
+                <div id="program3-details" class="program-details mt-3">
+                    <p>Develop industry-leading hospitality skills and customer service excellence.</p>
+                    <form method="post" action="#">
+                        <div class="form-group mb-3">
+                            <label for="fullName3">Full Name</label>
+                            <input type="text" id="fullName3" name="fullName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email3">Email</label>
+                            <input type="email" id="email3" name="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Apply Now</button>
+                    </form>
                 </div>
             </div>
 
             <!-- Program 4 -->
             <div class="col-md-6 mb-4">
-                <div class="card">
-                    <div class="card-header bg-danger text-white">
-                        Health Sciences Program
-                    </div>
-                    <div class="card-body">
-                        <p>Prepare for a rewarding career in healthcare and medical technology.</p>
-                        <a href="/Programs/HealthSciences" class="btn btn-danger">Learn More</a>
-                        <a href="/Application/HealthSciences" class="btn btn-outline-danger">Apply Now</a>
-                    </div>
+                <button class="btn btn-danger w-100" type="button" onclick="toggleDetails('program4-details')">
+                    Health Sciences Program
+                </button>
+                <div id="program4-details" class="program-details mt-3">
+                    <p>Prepare for a rewarding career in healthcare and medical technology.</p>
+                    <form method="post" action="#">
+                        <div class="form-group mb-3">
+                            <label for="fullName4">Full Name</label>
+                            <input type="text" id="fullName4" name="fullName" class="form-control" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email4">Email</label>
+                            <input type="email" id="email4" name="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Apply Now</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -88,5 +121,16 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Toggle program details
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
