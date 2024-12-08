@@ -1,12 +1,48 @@
 ﻿@page
 @model IndexModel
-@{    
-    ViewData["Title"] = "Home page";
+@{
+    ViewBag.Title = "Western Institute of Technology (WIT)";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Hello World from .NET 8</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <hr />
-    <div>Host operating system: @Model.OSVersion</div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" integrity="sha384-9ndCyUa1zY8HkXQp5Sej5Rl5KkTuxs0n3lA7A4X+A5K6Z+Xr9AnUrk3PBEO79I+d" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <!-- Title and Tagline -->
+        <h1 class="display-4">Western Institute of Technology (WIT)</h1>
+        <p class="lead">Empowering education with technology.</p>
+
+        <!-- Register Button with Dropdown -->
+        <div class="mt-4">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="registerButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Register
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="registerButton">
+                    <li><a class="dropdown-item" href="#">Bachelor of Information Technology</a></li>
+                    <li><a class="dropdown-item" href="#">Diploma in Business Administration</a></li>
+                    <li><a class="dropdown-item" href="#">Certificate in Hospitality Management</a></li>
+                    <li><a class="dropdown-item" href="#">Health Sciences Program</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5 text-center">
+        <p>&copy; @DateTime.Now.Year Western Institute of Technology (WIT). All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybJc2IftKT6tBz9EpE4e1i+lX/EdH5b49B/hRWzA8dx6RSbGS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6Bh4KrYlIwEYX9OMa4jq3uA1YzTjHakLxMKEQYVhHj5M" crossorigin="anonymous"></script>
+</body>
+</html>
+
